@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: black;
+  background: transparent;
   color: #fff;
   width: 100%;
   position: fixed;
@@ -11,6 +11,11 @@ export const Nav = styled.nav`
   z-index: 10;
   min-height: 10vh;
   display: flex;
+
+  h2 {
+    color: #fff;
+    color: #000;
+  }
 `;
 
 export const Wrapper = styled.section`
@@ -97,7 +102,7 @@ export const NavMenu = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   transition: all 0.2s ease;
-  background: #000;
+  background: transparent;
   width: 100%;
 
   @media (min-width: 768px) {
@@ -109,12 +114,12 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: #000;
   font-size: 1.6rem;
   transition: all 0.2s ease;
 
   @media (min-width: 768px) {
-    font-size: 2.4rem;
+    /* font-size: 1.6rem; */
     margin: 0 1.2rem;
     white-space: nowrap;
 

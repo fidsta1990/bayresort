@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* logo and menu bar */}
         <NavHeader>
           <NavLink to="/">
-            <h2>Logo</h2>
+            <h2>BayResort</h2>
           </NavLink>
           <ToggleButton onClick={handleToggle}>
             {click ? <FaTimes /> : <FaBars />}
@@ -47,7 +47,7 @@ const Navbar = () => {
           </NavMenu>
         </NavMenuWrapper>
         {/* sign up */}
-        <SignUpBtn>Sign Up</SignUpBtn>
+        <SignUpBtn>Booking</SignUpBtn>
       </Wrapper>
     </Nav>
   );

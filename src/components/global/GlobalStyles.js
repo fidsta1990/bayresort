@@ -14,6 +14,7 @@ const Global = createGlobalStyle`
 
  body{
   font-family: 'Quicksand', sans-serif;
+  background: #fcfcfc;
  }
 
  h1,h2,h3,h4{
