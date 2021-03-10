@@ -4,7 +4,7 @@ export const Form = styled.form`
   position: absolute;
   bottom: -60px;
   left: 50%;
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, 10%);
   width: 100%;
   transition: all 0.2s ease-in;
   background: #fff;
@@ -13,6 +13,7 @@ export const Form = styled.form`
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
+  border-radius: 0.4rem;
 
   .btn {
     width: 100%;
@@ -38,11 +39,32 @@ export const Form = styled.form`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
+
+  @media (max-height: 414px) and (max-width: 846px) {
+    bottom: -60px;
+  }
+
+  @media (max-height: 360px) and (max-width: 740px) {
+    bottom: -160px;
+  }
+
+  @media (max-height: 414px) and (max-width: 736px) {
+    bottom: -180px;
+  }
+
+  @media (max-height: 812px) and (max-width: 375px) {
+    bottom: -100px;
+    left: 49.9%;
+  }
+
+  @media (max-height: 375px) and (max-width: 667px) {
+    bottom: -180px;
+    left: 49.9%;
+  }
+
   @media (min-width: 768px) {
     max-width: 700px;
     grid-template-columns: repeat(3, 1fr);
-
-
   }
 
   @media (min-width: 1000px) {
@@ -58,6 +80,13 @@ export const Group = styled.div`
     padding: 0.8rem 0rem;
     font-size: 1.6rem;
   }
+
+  @media (max-height: 414px) {
+    label {
+      padding: 0;
+    }
+    margin-bottom: 0.8rem;
+  }
 `;
 
 export const Date = styled.input`
@@ -72,6 +101,11 @@ export const Date = styled.input`
   &:focus {
     border-width: 3px;
     outline: none;
+  }
+
+  @media (max-height: 414px) {
+    padding: 0;
+    margin: 0.4rem 0rem;
   }
 
   @media (min-width: 768px) {
@@ -95,5 +129,9 @@ export const Select = styled.select`
 
   option {
     padding: 0.8rem 0rem;
+  }
+
+  @media (max-height: 414px) {
+    padding: 0;
   }
 `;
