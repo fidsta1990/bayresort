@@ -13,8 +13,11 @@ export const Nav = styled.nav`
   display: flex;
 
   h2 {
-    color: #fff;
-    color: #000;
+    color: #efefef;
+  }
+
+  @media (min-width: 768px) {
+    border-bottom: 2px solid rgb(224, 224, 224, 0.4);
   }
 `;
 
@@ -42,7 +45,8 @@ export const Wrapper = styled.section`
   .links {
     &:hover {
       padding-left: 1.6rem;
-      color: cornflowerblue;
+      transform: scale(1.05);
+      border-bottom: 5px solid #2f47c0;
     }
 
     /* tablet/Desktop */
@@ -114,7 +118,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  color: #000;
+  color: #e0e0e0;
   font-size: 1.6rem;
   transition: all 0.2s ease;
 
@@ -131,12 +135,19 @@ export const NavLink = styled(Link)`
 
 export const SignUpBtn = styled.button`
   color: #fff;
-  background: cornflowerblue;
+  background: #2f47c0;
   padding: 10px 22px;
   white-space: nowrap;
   border: 0;
   box-shadow: 0 0 5px #fff;
   cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+  margin-right: 1.6rem;
+
+  &:hover {
+    background: #000;
+  }
 
   @media (max-width: 1028px) {
     display: none;

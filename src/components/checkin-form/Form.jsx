@@ -4,33 +4,35 @@ import * as FormS from "./formS";
 const Form = () => {
   return (
     <FormS.Form>
-      <div className="form-group">
-        <input
+      <FormS.Group>
+        <label htmlFor="check-in">Check In</label>
+        <FormS.Date
           type="date"
           name="checkIn"
           id="check-in"
           className="form-control"
         />
-      </div>
-      <div className="form-group">
-        <input
+      </FormS.Group>
+      <FormS.Group>
+        <label htmlFor="check-out">Check Out</label>
+        <FormS.Date
           type="date"
-          name="checkIn"
-          id="check-in"
+          name="checkOut"
+          id="check-out"
           className="form-control"
         />
-      </div>
-      <div className="form-group">
-        <select name="qty" id="qty" className="form-control">
+      </FormS.Group>
+      <FormS.Group>
+        <label htmlFor="qty">Rooms</label>
+        <FormS.Select name="qty" id="qty" className="form-control qty">
           <option value="one">1</option>
           <option value="two">2</option>
           <option value="threeplus">3+</option>
-        </select>
-      </div>
+        </FormS.Select>
+      </FormS.Group>
+      <button className="btn">Book</button>
     </FormS.Form>
   );
 };
 
 export default Form;
-
-
