@@ -4,82 +4,76 @@ export const Wrapper = styled.section`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 15rem 0rem;
   align-items: center;
   position: relative;
 
-  h2 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    letter-spacing: 2px;
-    color: #2f47c0;
+  .title {
     width: 100%;
-    max-width: 500px;
     text-align: center;
-    font-weight: 600;
-    z-index: 3;
-  }
-
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 2.4rem;
-      max-width: 320px;
-    }
-  }
-`;
-
-export const CaptureOneWrapper = styled.article`
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  top: 35%;
-  position: absolute;
-`;
-
-export const Info = styled.div`
-  position: absolute;
-  top: 30%;
-  right: -20px;
-  height: 200px;
-  width: 650px;
-  background: #fff;
-  padding: 1.6rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-  h4 {
     color: #2f47c0;
-    font-weight: 550;
-    font-size: 3.2rem;
-    letter-spacing: 2px;
-    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+    margin: 4rem 0rem 2.4rem 0rem;
   }
 
-  p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-
-    &:nth-of-type(2) {
-      margin-top: 1.6rem;
+  @media (min-width: 768px) {
+    .title {
+      font-size: 4rem;
+      max-width: 500px;
     }
   }
+  @media (max-height: 360px) {
+    .title {
+      padding-top: 4.8rem;
+    }
+  }
+  @media (max-height: 414px) {
+    padding-top: 9.6rem;
+
+    .title {
+      margin-top: 9.6rem;
+    }
+  }
+
+  @media (max-height: 414px) and (max-width: 736px) {
+    .title {
+     padding-top: 6.4rem;
+    }
+  }
+
 `;
 
-export const Card = styled.div`
-  background: #fff;
-  border: 0;
-  border-radius: 0.4rem;
+export const CaptureCard = styled.article`
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   padding: 1.6rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 480px;
-  height: 630px;
-  display: grid;
-  justify-content: center;
-  img {
-    width: 450px;
-    height: 600px;
+  margin: 2.4rem 0rem;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .capture-img {
+    width: 100%;
     object-fit: cover;
   }
+
+  @media (min-width: 740px){
+    max-width: 500px;
+  }
+
+  @media (max-height: 375px) and (max-width: 740px) {
+    margin: 2.4rem 0rem;
+  }
+
+  @media (max-height: 414px)  {
+    max-width: 600px;
+    margin: 5.6rem 0rem;
+  }
+
+  /* @media (max-height: 375px) and (max-width: 667px) {
+    max-width: 600px;
+
+  } */
 `;

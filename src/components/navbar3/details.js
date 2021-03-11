@@ -4,15 +4,15 @@ export const links = [
     url: "/about",
   },
   {
-    text: "Services",
-    url: "/services",
+    text: "Rooms",
+    url: "/rooms",
+  },
+  {
+    text: "Attractions",
+    url: "/attractions",
   },
   {
     text: "Contact Us",
     url: "/contact",
-  },
-  {
-    text: "Sign Up",
-    url: "/sign-up",
   },
 ];

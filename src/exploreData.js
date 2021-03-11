@@ -1,4 +1,4 @@
-import capture from "./img/picOne.jpg";
+import capture from "./img/bgOne.jpg";
 import captureTwo from "./img/picTwo.jpg";
 import captureThree from "./img/captureThree.jpg";
 import captureFour from "./img/captureThree.jpg";
