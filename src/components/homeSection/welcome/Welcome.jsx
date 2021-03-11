@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as WelcomeS from "./welcomeS";
-import { BtnOutline } from "../buttons/btnStyles";
-import capture from "../../img/bgEight.jpg";
+import { BtnOutline } from "../../buttons/btnStyles";
+import capture from "../../../img/bgEight.jpg";
 
 const Welcome = () => {
   return (

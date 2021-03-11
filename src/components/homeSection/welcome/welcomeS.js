@@ -14,6 +14,7 @@ export const Wrapper = styled.section`
 
 export const Title = styled.h2`
   color: #2f47c0;
+  letter-spacing: 2px;
 `;
 
 export const Container = styled.article`
@@ -70,10 +71,10 @@ export const Card = styled.div`
 
   p {
     color: #efefef;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 1.6rem 0rem;
     text-align: center;
-
+    letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 1.6rem;
   }
@@ -89,7 +90,7 @@ export const Card = styled.div`
 
     p {
       text-align: left;
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -98,14 +99,20 @@ export const Card = styled.div`
     left: -90px;
     bottom: -200px;
     background: linear-gradient(rgb(47, 71, 192, 0.99), rgb(47, 71, 192, 0.92));
+
+    p {
+      font-size: 1.6rem;
+    }
   }
 `;
 
 export const SubTitle = styled.h4`
   color: #fff;
   font-size: 2.4rem;
+  font-weight: 550;
   text-align: center;
   margin: 0.8rem 0rem 1.6rem 0rem;
+  letter-spacing: 2px;
 
   @media (min-width: 740px) {
     font-size: 3.2rem;

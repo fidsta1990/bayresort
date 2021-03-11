@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   padding: 0rem;
@@ -75,10 +75,10 @@ export const Card = styled.div`
 
   p {
     color: #efefef;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 1.6rem 0rem;
     text-align: center;
-
+    letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 1.6rem;
   }
@@ -94,23 +94,29 @@ export const Card = styled.div`
 
     p {
       text-align: left;
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
   }
 
   @media (min-width: 1024px) {
     position: absolute;
-    right: -100px;
+    left: -90px;
     bottom: -230px;
     background: linear-gradient(rgb(47, 71, 192, 0.99), rgb(47, 71, 192, 0.92));
+
+    p {
+      font-size: 1.6rem;
+    }
   }
 `;
 
 export const SubTitle = styled.h4`
   color: #fff;
   font-size: 2.4rem;
+  font-weight: 550;
   text-align: center;
   margin: 0.8rem 0rem 1.6rem 0rem;
+  letter-spacing: 2px;
 
   @media (min-width: 740px) {
     font-size: 3.2rem;

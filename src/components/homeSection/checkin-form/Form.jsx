@@ -1,6 +1,6 @@
 import React from "react";
 import * as FormS from "./formS";
-import { BtnSolid } from "../buttons/btnStyles";
+import { BtnSolid } from "../../buttons/btnStyles";
 
 const Form = () => {
   return (

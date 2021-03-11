@@ -1,8 +1,10 @@
 import React from "react";
 import * as Style from "./styles/index.js";
-import Form from "../components/checkin-form/Form";
-import Explore from "../components/explore/Explore.jsx";
-import Welcome from "../components/welcome/Welcome.jsx";
+import Form from "../components/homeSection/checkin-form/Form";
+import Explore from "../components/homeSection/explore/Explore";
+import Welcome from "../components/homeSection/welcome/Welcome.jsx";
+import Room from "../components/homeSection/room/Room.jsx";
+import Food from "../components/homeSection/food/Food.jsx";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       </Style.Wrapper>
       <Welcome />
       <Explore />
+      <Room />
+      <Food />
     </>
   );
 };
