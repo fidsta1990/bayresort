@@ -6,6 +6,13 @@ export const Wrapper = styled.section`
   flex-direction: column;
   padding: 15rem 0rem;
   align-items: center;
+`;
+
+export const Title = styled.h2`
+  color: #2f47c0;
+`;
+
+export const Container = styled.article`
   position: relative;
 `;
 
@@ -82,9 +89,12 @@ export const Card = styled.div`
     }
   }
 
-  /* @media (min-width: 768px) {
-    max-width: 500px;
-  } */
+  @media (min-width: 1024px) {
+    position: absolute;
+    left: -90px;
+    bottom: -200px;
+    background: linear-gradient(rgb(47, 71, 192, 0.99), rgb(47, 71, 192, 0.92));
+  }
 `;
 
 export const SubTitle = styled.h4`
@@ -97,8 +107,4 @@ export const SubTitle = styled.h4`
     font-size: 3.2rem;
     text-align: left;
   }
-`;
-
-export const Title = styled.h2`
-  color: #2f47c0;
 `;
