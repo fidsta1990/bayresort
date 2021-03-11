@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import capture from "../../../img/roomBg.jpg";
 import * as RoomS from "./roomS";
 import { BtnOutline } from "../../buttons/btnStyles";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Room = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, delay: 50 });
+  }, []);
+
+
   return (
     <RoomS.Wrapper>
       <RoomS.Container>
-        <RoomS.CaptureCard>
+        <RoomS.CaptureCard data-aos="fade-right">
           <img src={capture} alt="welcome island" className="capture-img" />
         </RoomS.CaptureCard>
-        <RoomS.Card>
+        <RoomS.Card data-aos="fade-right">
           <RoomS.SubTitle>Rest & Recooperate</RoomS.SubTitle>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint

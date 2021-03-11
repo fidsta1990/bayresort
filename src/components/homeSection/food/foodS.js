@@ -102,7 +102,7 @@ export const Card = styled.div`
 
   @media (min-width: 1024px) {
     position: absolute;
-    left: -90px;
+    right: -100px;
     bottom: -230px;
     background: linear-gradient(rgb(47, 71, 192, 0.99), rgb(47, 71, 192, 0.92));
 

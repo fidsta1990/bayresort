@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import capture from "../../../img/foodBg.jpg";
 import * as FoodS from "./foodS";
 import { BtnOutline } from "../../buttons/btnStyles";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Food = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, delay: 50 });
+  }, []);
   return (
     <FoodS.Wrapper>
       <FoodS.Container>
-        <FoodS.CaptureCard>
+        <FoodS.CaptureCard data-aos="fade-left">
           <img src={capture} alt="welcome island" className="capture-img" />
         </FoodS.CaptureCard>
-        <FoodS.Card>
+        <FoodS.Card data-aos="fade-left">
           <FoodS.SubTitle>Best Cuisine</FoodS.SubTitle>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint

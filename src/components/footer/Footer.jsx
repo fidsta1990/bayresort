@@ -1,21 +1,12 @@
 import React from "react";
 import { footerLinks, social } from "./details";
-import {
-  FooterStyle,
-  Wrapper,
-  Link,
-  Form,
-  FormInput,
-  FormBtn,
-} from "./footerStyle";
+import { FooterStyle, Wrapper, Link } from "./footerStyle";
+import Subscribe from "./Subscribe";
 
 const Footer = () => {
   return (
     <FooterStyle>
-      <Form>
-        <FormInput type="text" placeholder="Enter Email" />
-        <FormBtn>subscribe</FormBtn>
-      </Form>
+      <Subscribe />
       <Wrapper>
         {footerLinks.map((link) => {
           const { id, title, linkOne, linkTwo, linkThree, linkFour } = link;
