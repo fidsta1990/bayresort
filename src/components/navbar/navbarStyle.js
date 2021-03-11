@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: transparent;
+ 
   color: #fff;
   width: 100%;
   position: fixed;
@@ -37,21 +37,22 @@ export const Wrapper = styled.section`
 
     &.active {
       height: 15rem;
-      background: black;
     }
   }
 
   /* nav link */
   .links {
     &:hover {
-      padding-left: 1.6rem;
+      padding-left: 3.2rem;
       transform: scale(1.05);
-      border-bottom: 5px solid #2f47c0;
     }
+
+
 
     /* tablet/Desktop */
     @media (min-width: 768px) {
       &:hover {
+      border-bottom: 5px solid #efefef;
         padding-left: 0;
       }
     }

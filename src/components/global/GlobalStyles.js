@@ -15,6 +15,20 @@ const Global = createGlobalStyle`
  body{
   font-family: 'Quicksand', sans-serif;
   background: #fcfcfc;
+
+  .navbar{
+    background: transparent;
+    
+
+    &.onActive{
+      background:linear-gradient(rgb(11, 25, 166, 0.9), rgb(11, 25, 166, 0.95));
+    }
+
+    @media(max-width:768px){
+      background:linear-gradient(rgb(33, 50, 135), rgb(33, 50, 135));
+      background:linear-gradient(rgb(17, 25, 68), rgb(17, 25, 68));
+    }
+  }
  }
 
  h1,h2,h3,h4{

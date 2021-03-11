@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  min-height: 75vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   padding: 0rem;
   align-items: center;
 
   @media (min-width: 768px) {
+    min-height: 100vh;
     margin-top: 4rem;
+    margin-bottom: 9.6rem;
   }
 
   @media (min-width: 1024px) {
-    margin: 19rem 0rem 0rem 0rem;
+    margin: 19rem 0rem 9.6rem 0rem;
     padding: 6.4rem 0rem;
   }
 `;

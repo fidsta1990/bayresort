@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { links } from "./details";
 import {
@@ -12,16 +12,33 @@ import {
   SignUpBtn,
 } from "./navbarStyle";
 
-
-// more responsive
-
 const Navbar = () => {
+  //mobile menu show and hide state
   const [click, setClick] = useState(false);
-
+  //navbar show and hide on scroll state
+  const [navbar, setNavbar] = useState(false);
+  // toggle nav on mobile view
   const handleToggle = () => setClick(!click);
 
+  // show background on scrolling of navbar
+
+  useEffect(() => {
+    const showNav = () => {
+   
+      if (window.scrollY >= 300) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", showNav);
+
+    return () => window.removeEventListener("scroll", showNav);
+  }, []);
+
   return (
-    <Nav>
+    <Nav className={navbar ? "navbar onActive" : "navbar"}>
       <Wrapper>
         {/* logo and menu bar */}
         <NavHeader>
