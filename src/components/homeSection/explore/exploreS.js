@@ -7,6 +7,7 @@ export const Wrapper = styled.section`
   padding: 0rem;
   align-items: center;
 
+
   @media (min-width: 768px) {
     margin-top: 4rem;
   }
@@ -22,6 +23,7 @@ export const Container = styled.article`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
 `;
 
 export const CaptureCard = styled.article`

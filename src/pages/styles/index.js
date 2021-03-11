@@ -9,9 +9,10 @@ export const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
-
+ 
   @media (max-width: 767px) {
     background: #2f47c0;
+    
   }
 `;
 

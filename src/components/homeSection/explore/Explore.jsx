@@ -13,10 +13,10 @@ const Explore = () => {
   return (
     <ExploreS.Wrapper>
       <ExploreS.Container>
-        <ExploreS.CaptureCard data-aos="fade-left">
+        <ExploreS.CaptureCard data-aos="fade-up">
           <img src={capture} alt="welcome island" className="capture-img" />
         </ExploreS.CaptureCard>
-        <ExploreS.Card data-aos="fade-left">
+        <ExploreS.Card data-aos="fade-up">
           <ExploreS.SubTitle>Explore The Island</ExploreS.SubTitle>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint

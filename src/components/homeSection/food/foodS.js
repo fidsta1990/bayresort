@@ -6,16 +6,28 @@ export const Wrapper = styled.section`
   flex-direction: column;
   padding: 0rem;
   align-items: center;
+  margin-bottom: 5rem;
+
+  @media (min-width: 375px) {
+    min-height: 70vh;
+  }
+
 
   @media (min-width: 768px) {
-    min-height: 100vh;
+    min-height: 80vh;
     margin-top: 4rem;
     margin-bottom: 9.6rem;
+  }
+
+  @media (min-width: 800px) {
+    min-height: 70vh;
+    margin-bottom: 5rem;
   }
 
   @media (min-width: 1024px) {
     margin: 19rem 0rem 9.6rem 0rem;
     padding: 6.4rem 0rem;
+    min-height: 100vh;
   }
 `;
 

@@ -12,10 +12,10 @@ const Food = () => {
   return (
     <FoodS.Wrapper>
       <FoodS.Container>
-        <FoodS.CaptureCard data-aos="fade-left">
+        <FoodS.CaptureCard data-aos="fade-up">
           <img src={capture} alt="welcome island" className="capture-img" />
         </FoodS.CaptureCard>
-        <FoodS.Card data-aos="fade-left">
+        <FoodS.Card data-aos="fade-up">
           <FoodS.SubTitle>Best Cuisine</FoodS.SubTitle>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint

@@ -14,10 +14,10 @@ const Welcome = () => {
     <WelcomeS.Wrapper>
       <WelcomeS.Title className="title">Welcome to BayResort</WelcomeS.Title>
       <WelcomeS.Container>
-        <WelcomeS.CaptureCard data-aos="fade-right">
+        <WelcomeS.CaptureCard data-aos="fade-up">
           <img src={capture} alt="welcome island" className="capture-img" />
         </WelcomeS.CaptureCard>
-        <WelcomeS.Card data-aos="fade-right">
+        <WelcomeS.Card data-aos="fade-up">
           <WelcomeS.SubTitle>Top Class Facilities</WelcomeS.SubTitle>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint

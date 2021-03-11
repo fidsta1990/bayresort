@@ -43,7 +43,7 @@ const Subscribe = () => {
         <FormBtn>subscribe</FormBtn>
       </Form>
       {error.show && (
-        <h4 className={` ${!entry && "message danger" || entry &  "message success"}`}>
+        <h4 className={`message ${entry === false ? "danger" : "success"}`}>
           {error.msg}
         </h4>
       )}

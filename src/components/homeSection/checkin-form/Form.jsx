@@ -2,7 +2,7 @@ import React from "react";
 import * as FormS from "./formS";
 import { BtnSolid } from "../../buttons/btnStyles";
 
-const Form = () => {
+const Form = ({ open }) => {
   return (
     <FormS.Form>
       <FormS.Group>
@@ -24,14 +24,16 @@ const Form = () => {
         />
       </FormS.Group>
       <FormS.Group>
-        <label htmlFor="qty">Rooms</label>
+        <label htmlFor="qty">Guests</label>
         <FormS.Select name="qty" id="qty" className="form-control qty">
           <option value="one">1</option>
           <option value="two">2</option>
           <option value="threeplus">3+</option>
         </FormS.Select>
       </FormS.Group>
-      <BtnSolid type="submit">Book</BtnSolid>
+      <BtnSolid type="button" onClick={open}>
+        Book
+      </BtnSolid>
     </FormS.Form>
   );
 };
