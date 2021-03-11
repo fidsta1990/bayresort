@@ -57,6 +57,46 @@ const Global = createGlobalStyle`
    text-decoration: none;
  }
 
+ img{
+   width: 100;
+   display: block;
+   object-fit: cover;
+ }
+
+/* TITLE */
+.title {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2.4rem;
+    margin: 4rem 0rem 2.4rem 0rem;
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      font-size: 4rem;
+      max-width: 500px;
+    }
+  }
+  @media (max-height: 360px) {
+    .title {
+      padding-top: 4.8rem;
+    }
+  }
+  @media (max-height: 414px) {
+    padding-top: 9.6rem;
+
+    .title {
+      margin-top: 9.6rem;
+    }
+  }
+
+  @media (max-height: 414px) and (max-width: 736px) {
+    .title {
+      padding-top: 6.4rem;
+    }
+  }
+
 `;
 
 export default Global;

@@ -14,31 +14,7 @@ export const Form = styled.form`
   grid-template-columns: 1fr;
   align-content: center;
   border-radius: 0.4rem;
-
-  .btn {
-    width: 100%;
-    margin: 1.6rem 0rem 0rem;
-    padding: 8px 0rem;
-    border: 0;
-    border-radius: 0.8rem;
-    background: #2f47c0;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.6rem;
-    letter-spacing: 2px;
-    font-family: "Quicksand", sans-serif;
-    cursor: pointer;
-    transition: all 0.2s ease;
-
-    &:hover {
-      background: #000;
-    }
-  }
-
-  &:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
+  z-index: 1;
 
   @media (max-height: 414px) and (max-width: 846px) {
     bottom: -60px;

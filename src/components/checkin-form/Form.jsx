@@ -1,5 +1,6 @@
 import React from "react";
 import * as FormS from "./formS";
+import { BtnSolid } from "../buttons/btnStyles";
 
 const Form = () => {
   return (
@@ -30,7 +31,7 @@ const Form = () => {
           <option value="threeplus">3+</option>
         </FormS.Select>
       </FormS.Group>
-      <button className="btn">Book</button>
+      <BtnSolid type="submit">Book</BtnSolid>
     </FormS.Form>
   );
 };
