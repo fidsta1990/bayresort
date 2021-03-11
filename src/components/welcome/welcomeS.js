@@ -4,8 +4,12 @@ export const Wrapper = styled.section`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 15rem 0rem;
+  padding: 15rem 0rem 0rem 0rem;
   align-items: center;
+
+  @media (min-width: 1024px) {
+    margin: 0rem 0rem 5.6rem 0rem;
+  }
 `;
 
 export const Title = styled.h2`
