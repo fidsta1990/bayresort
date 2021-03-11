@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as WelcomeS from "./welcomeS";
 import { BtnOutline } from "../../buttons/btnStyles";
 import capture from "../../../img/bgEight.jpg";

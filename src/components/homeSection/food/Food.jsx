@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import capture from "../../../img/foodBg.jpg";
 import * as FoodS from "./foodS";
 import { BtnOutline } from "../../buttons/btnStyles";
