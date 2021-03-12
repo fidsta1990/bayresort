@@ -14,9 +14,11 @@ const Accord = () => {
   return (
     <AccordS.Wrapper>
       <h2>Rooms</h2>
-      {data.map((item) => {
-     return <SingleRoom  key={item.id} {...item}/>
-      })}
+      <AccordS.Container>
+        {data.map((item) => {
+          return <SingleRoom key={item.id} {...item} />;
+        })}
+      </AccordS.Container>
     </AccordS.Wrapper>
   );
 };

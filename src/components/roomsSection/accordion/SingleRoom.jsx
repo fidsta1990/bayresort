@@ -11,9 +11,11 @@ const SingleRoom = ({ name, price, img, desc, guests }) => {
   }, []);
 
   return (
-    <Single.Container data-aos="fade-up">
-      <h3>{name}</h3>
-      <img src={img} alt={name} />
+    <Single.CardContainer data-aos="fade-up">
+      <Single.Header>
+        <h3>{name}</h3>
+        <img src={img} alt={name} />
+      </Single.Header>
       <Single.Info>
         <Single.Book>
           <p>{price} per night</p>
@@ -28,8 +30,10 @@ const SingleRoom = ({ name, price, img, desc, guests }) => {
           </p>
         </Single.Describe>
       </Single.Info>
-    </Single.Container>
+    </Single.CardContainer>
   );
 };
+
+
 
 export default SingleRoom;
