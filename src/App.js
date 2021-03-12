@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 //PAGES
 import Home from "./pages/";
 import About from "./pages/About";
+import Rooms from "./pages/Rooms";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/rooms" component={Rooms} />
       </Switch>
       <Footer />
     </Router>
