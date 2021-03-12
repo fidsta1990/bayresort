@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import capture from "../../../img/resort.jpg";
+import capture from "../../../img/captureThree.jpg";
 import * as BioS from "./bioS";
 import { BtnOutline } from "../../buttons/btnStyles";
 import AOS from "aos";
