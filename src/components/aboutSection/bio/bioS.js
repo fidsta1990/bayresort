@@ -84,8 +84,18 @@ export const Title = styled.div`
   letter-spacing: 2px;
   font-size: 3.2rem;
   margin: 0 0 2.4rem 0;
+  width: 100%;
+  line-height: 1.5;
+  text-align: center;
+
   @media (min-width: 768px) {
     font-size: 4rem;
+  }
+
+  @media (max-width: 736px) and (max-height: 414px) {
+    .title {
+      padding: 1.6rem 0rem;
+    }
   }
 `;
 

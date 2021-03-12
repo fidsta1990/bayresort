@@ -15,7 +15,7 @@ const Explore = () => {
       <BioS.Container>
         <img src={capture} alt="resort capture" className="capture" />
         <BioS.Info>
-          <BioS.Title className="title">About Us</BioS.Title>
+          <BioS.Title >About Us</BioS.Title>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             veniam nisi cum.
