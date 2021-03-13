@@ -14,6 +14,27 @@ export const Wrapper = styled.section`
     color: #2f47c0;
     letter-spacing: 2px;
   }
+
+  .danger {
+    color: coral;
+    font-size: 1.6rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    @media (min-width: 900px) {
+      max-width: 1200px;
+    }
+  }
 `;
 
 export const FormCard = styled.form`
@@ -22,7 +43,7 @@ export const FormCard = styled.form`
   box-shadow: 0 0 5px rgb(47, 71, 192, 0.5);
   border-radius: 0.8rem;
   width: 340px;
-  height: 500px;
+  height: 530px;
   padding: 1.6rem;
   transition: all 0.2s ease;
 
@@ -31,7 +52,7 @@ export const FormCard = styled.form`
   }
 
   @media (min-width: 768px) {
-    height: 530px;
+    height: 550px;
     width: 450px;
   }
 `;
@@ -45,6 +66,8 @@ export const FormLabel = styled.label`
   font-weight: bold;
   color: #2f47c0;
   padding: 1.6rem 0rem 0.8rem 0rem;
+  text-align: left;
+  width: 100%;
 
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -70,12 +93,13 @@ export const FormMessage = styled.textarea`
   display: block;
   width: 100%;
   font-size: 1.6rem;
+  font-weight: 550;
   padding: 1.6rem 0rem;
-  /* margin-bottom: 0.8rem; */
   color: #2f47c0;
   border: 0;
   border-bottom: 2px solid rgb(47, 71, 192, 0.4);
   cursor: pointer;
+  font-family: "Quicksand", sans-serif;
   &:focus {
     outline: none;
   }

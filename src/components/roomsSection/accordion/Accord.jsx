@@ -1,6 +1,5 @@
 import React from "react";
 import * as AccordS from "./accordS";
-import * as FiIcon from "react-icons/fi";
 import { room } from "../roomData";
 import SingleRoom from "./SingleRoom";
 
