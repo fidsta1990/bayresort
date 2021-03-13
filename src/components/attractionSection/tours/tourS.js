@@ -10,6 +10,13 @@ export const Container = styled.section`
   max-width: 90vw;
   margin: auto;
 
+  h2 {
+    text-align: center;
+    margin: 4rem 0rem 6.4rem 0rem;
+    letter-spacing: 2px;
+    color: #2f47c0;
+  }
+
   @media (min-width: 768px) {
     max-width: 1200px;
   }
