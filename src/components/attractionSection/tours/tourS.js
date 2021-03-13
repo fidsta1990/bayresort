@@ -21,3 +21,18 @@ export const Container = styled.section`
     max-width: 1200px;
   }
 `;
+
+export const TourWrap = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+  padding-bottom: 2.4rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;

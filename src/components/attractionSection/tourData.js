@@ -1,4 +1,3 @@
-import { FaStarHalfAlt, FaStar, FaRegStar } from "react-icons/fa";
 import attract1 from "../../img/people.jpg";
 import attract2 from "../../img/attraction1.jpg";
 import attract3 from "../../img/attraction2.jpg";
@@ -13,9 +12,6 @@ export const tourList = [
     img: `${attract1}`,
     location: "phi phi island",
     reviews: "300 reviews",
-    star: <FaStar />,
-    halfStar: <FaStarHalfAlt />,
-    emptyStar: <FaRegStar />,
     distance: "1KM AWAY",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae harum reprehenderit consequatur dolorum quis earum officiis.",
@@ -23,11 +19,8 @@ export const tourList = [
   {
     id: 2,
     img: `${attract2}`,
-    location: "phi phi island",
+    location: "Prayer Temple",
     reviews: "100 reviews",
-    star: <FaStar />,
-    halfStar: <FaStarHalfAlt />,
-    emptyStar: <FaRegStar />,
     distance: "4KM AWAY",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae harum reprehenderit consequatur dolorum quis earum officiis.",
@@ -35,11 +28,8 @@ export const tourList = [
   {
     id: 3,
     img: `${attract3}`,
-    location: "phi phi island",
+    location: "Royal Palace Grand",
     reviews: "128 reviews",
-    star: <FaStar />,
-    halfStar: <FaStarHalfAlt />,
-    emptyStar: <FaRegStar />,
     distance: "0.5KM AWAY",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae harum reprehenderit consequatur dolorum quis earum officiis.",
@@ -49,9 +39,6 @@ export const tourList = [
     img: `${attract4}`,
     location: "phi phi island",
     reviews: "55reviews",
-    star: <FaStar />,
-    halfStar: <FaStarHalfAlt />,
-    emptyStar: <FaRegStar />,
     distance: "1.2KM AWAY",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae harum reprehenderit consequatur dolorum quis earum officiis.",
@@ -61,9 +48,6 @@ export const tourList = [
     img: `${attract5}`,
     location: "phi phi island",
     reviews: "99 reviews",
-    star: <FaStar />,
-    halfStar: <FaStarHalfAlt />,
-    emptyStar: <FaRegStar />,
     distance: "2.5KM AWAY",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae harum reprehenderit consequatur dolorum quis earum officiis.",
@@ -73,9 +57,6 @@ export const tourList = [
     img: `${attract6}`,
     location: "phi phi island",
     reviews: "230 reviews",
-    star: <FaStar />,
-    halfStar: <FaStarHalfAlt />,
-    emptyStar: <FaRegStar />,
     distance: "10KM AWAY",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae harum reprehenderit consequatur dolorum quis earum officiis.",
@@ -85,9 +66,6 @@ export const tourList = [
     img: `${attract7}`,
     location: "phi phi island",
     reviews: "528 reviews",
-    star: <FaStar />,
-    halfStar: <FaStarHalfAlt />,
-    emptyStar: <FaRegStar />,
     distance: "6KM AWAY",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repudiandae harum reprehenderit consequatur dolorum quis earum officiis.",
