@@ -1,8 +1,14 @@
 import React from "react";
-import * as Style from "./styles/contactS";
+import Form from "../components/contactSection/Form";
+import * as ContactS from "./styles/contactS";
 
 const Contact = () => {
-  return <div></div>;
+  return (
+    <>
+      <ContactS.Wrapper />
+      <Form />
+    </>
+  );
 };
 
 export default Contact;
