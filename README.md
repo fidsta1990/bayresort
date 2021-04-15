@@ -2,6 +2,13 @@
 
 A travel resort website to book rooms and events.
 
+![Screenshot 2021-04-15 at 20 36 48](https://user-images.githubusercontent.com/54501214/114928418-7b564b00-9e2a-11eb-95be-36b45a980924.png)
+
+![Screenshot 2021-04-15 at 20 37 28](https://user-images.githubusercontent.com/54501214/114928445-827d5900-9e2a-11eb-85ff-4126648532bf.png)
+
+![Screenshot 2021-04-15 at 20 37 43](https://user-images.githubusercontent.com/54501214/114928452-85784980-9e2a-11eb-8803-8901ddee02b7.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
